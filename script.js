@@ -45,17 +45,17 @@ function clearInput() {
 //click to convert
 
 convertBtn.addEventListener('click', function() {
-
+    let value = Number(numberInput.value) ;
     if(!numberInput.value) {
         alert("Enter your number !")
     } else {
-        mf.innerHTML = `${numberInput.value } meters = ${getMeterToFeet(numberInput.value)} feet | ${numberInput.value } feet = ${getFeetToMeter(numberInput.value)} meters `;
+        mf.innerHTML = `${value} meters = ${getMeterToFeet(value)} feet | ${value} feet = ${getFeetToMeter(value)} meters `;
 
-        lg.innerHTML = `${numberInput.value } liters = ${getLiterToGalon(numberInput.value)} gallons | ${numberInput.value } gallons = ${getGalonToLiter(numberInput.value)} liters `;
+        lg.innerHTML = `${value} liters = ${getLiterToGalon(value)} gallons | ${value } gallons = ${getGalonToLiter(value)} liters `;
 
-        kp.innerHTML = `${numberInput.value } kilos = ${getKilogramToPound(numberInput.value)} pounds | ${numberInput.value } pounds = ${getPoundToKilogram(numberInput.value)} kilos `;
+        kp.innerHTML = `${value} kilos = ${getKilogramToPound(value)} pounds | ${value } pounds = ${getPoundToKilogram(value)} kilos `;
     }
-
+    
     clearInput()
 })
 
