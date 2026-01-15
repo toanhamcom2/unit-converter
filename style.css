@@ -1,0 +1,134 @@
+/* makes sizing simpler */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* dark mode user-agent-styles */
+
+/* html {
+  color-scheme: dark light;
+} */
+
+/* min body height */
+
+/* body {
+  min-height: 100vh;
+} */
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    border: 1px solid red;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;  
+}
+
+.convert-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #6943FF;
+    color: white; 
+    width: 100%;
+    padding:  7px 0 20px 0; 
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 10px 0 15px 0;
+    font-weight: bold;
+}
+
+#numberInput {
+    align-self: center;
+    max-width: 100px;
+    height: 70px;
+    border: 1px solid white;
+    background-color: transparent;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+#numberInput:focus{
+    outline: none;
+}
+
+button {
+    align-self: center;
+    cursor: pointer;
+    margin: 10px 0 10px 0;
+    padding: 7px 17px;
+    border-radius: 7px;
+    border: none;
+    max-width: 100px;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #5741d9;
+    color: white;
+}
+
+.render {
+    text-align: center;
+    width: 100%;
+    margin: 0 0 0 0;
+    padding: 20px 0 20px 0;
+    background-color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    color: #CCC1FF;
+}
+
+.container-small{
+    background-color: #273549 ;
+    max-width: 490px;
+    width: 80%;
+    margin: 10px 0;
+    padding: 20px 10px;
+    border-radius: 7px;
+}
+
+p {
+    color: white;
+    margin: 10px 0 0 0;
+    font-size: 0.9rem;
+}
+

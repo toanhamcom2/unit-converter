@@ -45,11 +45,16 @@ function clearInput() {
 //click to convert
 
 convertBtn.addEventListener('click', function() {
-    mf.innerHTML = `${numberInput.value } meters = ${getMeterToFeet(numberInput.value)} feet | ${numberInput.value } feet = ${getFeetToMeter(numberInput.value)} meters `;
 
-    lg.innerHTML = `${numberInput.value } liters = ${getLiterToGalon(numberInput.value)} gallons | ${numberInput.value } gallons = ${getGalonToLiter(numberInput.value)} liters `;
+    if(!numberInput.value) {
+        alert("Enter your number !")
+    } else {
+        mf.innerHTML = `${numberInput.value } meters = ${getMeterToFeet(numberInput.value)} feet | ${numberInput.value } feet = ${getFeetToMeter(numberInput.value)} meters `;
 
-    kp.innerHTML = `${numberInput.value } kilos = ${getKilogramToPound(numberInput.value)} pounds | ${numberInput.value } pounds = ${getPoundToKilogram(numberInput.value)} kilos `;
+        lg.innerHTML = `${numberInput.value } liters = ${getLiterToGalon(numberInput.value)} gallons | ${numberInput.value } gallons = ${getGalonToLiter(numberInput.value)} liters `;
+
+        kp.innerHTML = `${numberInput.value } kilos = ${getKilogramToPound(numberInput.value)} pounds | ${numberInput.value } pounds = ${getPoundToKilogram(numberInput.value)} kilos `;
+    }
 
     clearInput()
 })

@@ -4,27 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <title>Unit Converter</title>
 </head>
 <body>
-    <h1>Metric/Imperial Unit Conversion</h1>
-    <label for="numberInput">Convert Your Number(s) </label>
-    <input
-        type="number"
-        id="numberInput"
-        name="convert"
-    >
-    <button id="convert-btn">Convert</button>
-
-    <p>Length (Meter/Feet)</p>
-    <p id="mf"></p>
-
-    <p>Volume (Liters/Gallons)</p>
-    <p id="lg"></p>
-
-    <p>Mass (Kilograms/Pounds)</p>
-    <p id = "kp"></p>
-
+    <div class="container">
+        <div class="convert-section">
+            <h1>Metric/Imperial Unit Conversion</h1>
+            <label for="numberInput">Convert Your Number(s) </label>
+            <input
+                type="text"
+                id="numberInput"
+                name="convert"
+            >
+            <button id="convert-btn">Convert</button>
+        </div>
+        <div class="render">
+            <div class="container-small">
+                <h2>Length (Meter/Feet)</h2>
+                <p id="mf"></p>
+            </div>
+            <div class="container-small">
+                <h2>Volume (Liters/Gallons)</h2>
+                <p id="lg"></p>
+            </div>
+            <div class="container-small">
+                <h2>Mass (Kilograms/Pounds)</h2>
+                <p id = "kp"></p>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="./script.js"></script>
 </html>
